@@ -1,0 +1,10 @@
+.DS_Store
+.idea
+build
+dist
+*.egg-info
+*.py[co]
+node_modules
+docs/_build
+.monitor
+npm-debug.log
