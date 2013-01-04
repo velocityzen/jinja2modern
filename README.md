@@ -22,9 +22,9 @@ JINJA2MODERN_MEDIA_PATH = 'media'
 JINJA2MODERN_MEDIA_URL = '/media'
 ```
 
-### Engines
+#### Engines
 
-There are several preprocessor engine directories that you will need in your project. Here is how you can get them:
+There are several preprocessor engines that you will need in your project. Here is how you can get them:
 
 ```python
 JINJA2MODERN_ENGINES = {
