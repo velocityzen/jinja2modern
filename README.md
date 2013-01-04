@@ -16,8 +16,6 @@ In your project directory create settings.py, guess you already have it, with se
 ```python
 #home path
 JINJA2MODERN_HOME = os.path.realpath(os.path.dirname(__file__))
-#engines path, will describe this later
-JINJA2MODERN_ENGINES = os.path.join(HOME, 'engines')
 #media path relative to home directory
 JINJA2MODERN_MEDIA_PATH = 'media'
 #media url
@@ -28,10 +26,14 @@ JINJA2MODERN_MEDIA_URL = '/media'
 
 There are several preprocessor engine directories that you will need in your project. Here is how you can get them:
 
-    git clone https://github.com/jashkenas/coffee-script.git coffee
-    git clone https://github.com/mishoo/UglifyJS uglify
-    git clone https://github.com/cloudhead/less.js less
-    git clone https://github.com/nex3/sass
+```python
+JINJA2MODERN_ENGINES = {
+    'coffee': '/path/to/coffee/bin/coffee',
+    'uglify': '/path/to/uglify/bin/uglifyjs',
+    'lesscss': '/path/to/lesscss/bin/lessc',
+    'sass': '/path/to/sass/bin/sass',
+}
+```
 
 ### Templates
 

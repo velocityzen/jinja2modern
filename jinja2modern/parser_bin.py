@@ -6,9 +6,11 @@ from jinja2modern.parser_error import ParserError
 from jinja2modern.utils import strip_list, create_dir_if_not_exist
 from settings import JINJA2MODERN_ENGINES, JINJA2MODERN_HOME, JINJA2MODERN_MEDIA_PATH, JINJA2MODERN_MEDIA_URL
 
+
 class Parser():
+
     def __init__(self, environment, parser_bin, template, out_dir, out_extension = None, parser_single = None, parser_multiple = None):
-        self.parser_bin = os.path.join(JINJA2MODERN_ENGINES, parser_bin)
+        self.parser_bin = JINJA2MODERN_ENGINES[parser_bin]
         if not os.path.exists(self.parser_bin):
             raise ParserError("Parser not found: {parser}".format(parser = self.parser_bin))
 

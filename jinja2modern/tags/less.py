@@ -10,7 +10,7 @@ class LessTagExtension(Extension):
         environment.extend(
             less_parser=Parser(
                 environment = environment,
-                parser_bin = 'less/bin/lessc',
+                parser_bin = 'lesscss',
                 parser_single= '-x {in_file} {out_path_file}',
                 template = 'tags/css.html',
                 out_dir= 'css',

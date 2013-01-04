@@ -1,2 +1,2 @@
 include README.md
-recursive-include templates *
+recursive-include jinja2modern/templates *.html

@@ -7,7 +7,7 @@ def read(fname):
 
 setup(
     name='jinja2modern',
-    version='0.2.0',
+    version='0.3.0',
     author='Alexey Novikov',
     author_email='velocityzen@gmail.com',
     include_package_data = True,

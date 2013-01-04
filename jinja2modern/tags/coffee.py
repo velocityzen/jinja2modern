@@ -10,7 +10,7 @@ class CoffeeTagExtension(Extension):
         environment.extend(
             coffee_parser=Parser(
                 environment = environment,
-                parser_bin = 'coffee/bin/coffee',
+                parser_bin = 'coffee',
                 parser_single = '--output {out_path} --join {out_file} {in_file}',
                 parser_multiple = '--output {out_path} --join {out_file} {in_files}',
                 template = 'tags/js.html',

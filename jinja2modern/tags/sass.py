@@ -10,7 +10,7 @@ class SassScssTagExtension(Extension):
         environment.extend(
             sass_parser=Parser(
                 environment = environment,
-                parser_bin = 'sass/bin/sass',
+                parser_bin = 'sass',
                 parser_single= '--style compressed {in_file} {out_path_file}',
                 template = 'tags/css.html',
                 out_dir= 'css',

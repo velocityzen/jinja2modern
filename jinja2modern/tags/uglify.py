@@ -10,7 +10,7 @@ class UglifyTagExtension(Extension):
         environment.extend(
             uglify_parser=Parser(
                 environment = environment,
-                parser_bin = 'uglify/bin/uglifyjs',
+                parser_bin = 'uglify',
                 parser_single = '--output {out_path_file} {in_file}',
                 parser_multiple = '--output {out_path_file} {in_files}',
                 template = 'tags/js.html',
